@@ -1,5 +1,5 @@
 # inspect-dungeon-clears
-for using this mod,you need add these opcodes to ur protocol:
+for using this mod,you need add this opcode to ur protocol:
 
 C_DUNGEON_CLEAR_COUNT_LIST
 
