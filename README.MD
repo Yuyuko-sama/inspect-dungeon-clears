@@ -1,4 +1,11 @@
 # inspect-dungeon-clears
+for using this mod,you need add these opcodes to ur protocol:
+
+C_DUNGEON_CLEAR_COUNT_LIST
+
+TW：
+C_DUNGEON_CLEAR_COUNT_LIST = 22493
+
 Prints out a list of how many clears a player has when you inspect them.
 
 ![Screenshot](https://i.imgur.com/6uRm864.jpg)
