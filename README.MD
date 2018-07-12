@@ -3,8 +3,8 @@ for using this mod,you need add this opcode to ur protocol:
 
 C_DUNGEON_CLEAR_COUNT_LIST
 
-TW：
-C_DUNGEON_CLEAR_COUNT_LIST = 22493
+TW 71.03 patch：
+C_DUNGEON_CLEAR_COUNT_LIST = 34616
 
 Prints out a list of how many clears a player has when you inspect them.
 
