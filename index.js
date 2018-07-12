@@ -10,7 +10,8 @@ module.exports = function InspectDungeonClears(dispatch) {
         9935: "終極RK-9 機庫",
 		9939: "森嚴的革命團總部",
         9970: "超越的拉坎里斯的廢墟",
-        9710: "扭曲的拉坎祭壇",
+        9070:"吹牛王塔勒斯基的遊樂場",
+		9710: "扭曲的拉坎祭壇",
         9716: "艾爾凱拉斯號",
         9735: "RK-9 機庫",
 		9739: "革命團總部",
@@ -28,6 +29,7 @@ module.exports = function InspectDungeonClears(dispatch) {
         //9025: "博得神殿",
         //9026: "阿勒坤魅迪提亞",
         //9727: "珊德拉馬奈伊亞",
+		
 		
     };
     
