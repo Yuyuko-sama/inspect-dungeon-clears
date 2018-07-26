@@ -6,6 +6,8 @@ C_DUNGEON_CLEAR_COUNT_LIST
 TW 71.03 patch：
 C_DUNGEON_CLEAR_COUNT_LIST = 34616
 
+add this to protocol.333786.map(CaaliTeraProxy\node_modules\tera-data\map)
+
 Prints out a list of how many clears a player has when you inspect them.
 
 ![Screenshot](https://i.imgur.com/6uRm864.jpg)
