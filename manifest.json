@@ -1,0 +1,12 @@
+{
+	"files": {
+		"README.MD": "a06e46b5569f4ca252d422e129a9f45b2230285ea2deaa4d2d10f8c99f8667ce",
+		"index.js": "75666228e3b97f649032f1eb1f68240b12c34b1b599017481e66ec22a3382d7f",
+		"module.json": "aefd97900a5009d9484ce7a28cbaa431a3ff75eadba11cdc7ee76c90069c72b3"
+	},
+	"defs": {
+		"C_DUNGEON_CLEAR_COUNT_LIST": 1,
+		"S_DUNGEON_CLEAR_COUNT_LIST": 1,
+		"S_LOGIN": 10
+	}
+}
