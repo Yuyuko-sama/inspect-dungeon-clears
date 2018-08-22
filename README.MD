@@ -3,7 +3,7 @@ for using this mod,you need add this opcode to ur protocol:
 
 C_DUNGEON_CLEAR_COUNT_LIST
 
-TW 72.03 patch£º
+TW 72.03 patch:
 C_DUNGEON_CLEAR_COUNT_LIST = 58566
 
 add this to protocol.335641.map(CaaliTeraProxy\node_modules\tera-data\map)
