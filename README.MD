@@ -10,7 +10,7 @@ add this to protocol.335641.map(CaaliTeraProxy\node_modules\tera-data\map)
 
 Prints out a list of how many clears a player has when you inspect them.
 
-![Screenshot]([Imgur](https://i.imgur.com/SI7NzaX.png)
+![Screenshot](https://i.imgur.com/SI7NzaX.png)
 
 ## Changelog
 <details>
