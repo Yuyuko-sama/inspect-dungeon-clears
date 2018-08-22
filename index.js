@@ -1,20 +1,19 @@
-const Command = require('command');
+'use strict'
 
-module.exports = function InspectDungeonClears(dispatch) {
-    const command = Command(dispatch);
+module.exports = function InspectDungeonClears(mod) {
     
     const DungeonNames = {
         9920: "空洞的安塔洛斯深淵",
-	9950: "破壞的神界關口",
-	9720: "安卡洛斯深淵",
+		9950: "破壞的神界關口",
+		9720: "安卡洛斯深淵",
         9935: "終極RK-9 機庫",
-	9939: "森嚴的革命團總部",
+		9939: "森嚴的革命團總部",
         9970: "超越的拉坎里斯的廢墟",
         9070:"吹牛王塔勒斯基的遊樂場",
-	9710: "扭曲的拉坎祭壇",
+		9710: "扭曲的拉坎祭壇",
         9716: "艾爾凱拉斯號",
         9735: "RK-9 機庫",
-	9739: "革命團總部",
+		9739: "革命團總部",
         9770: "拉坎里斯的廢墟",
         9969: "惡女莉里斯城",
         9994: "阿爾法賽伊洛斯研究基地"
@@ -29,27 +28,28 @@ module.exports = function InspectDungeonClears(dispatch) {
         //9025: "博得神殿",
         //9026: "阿勒坤魅迪提亞",
         //9727: "珊德拉馬奈伊亞",
-
+		
+		
     };
     
     let playerId,
     targetName;
     
-    dispatch.hook('S_LOGIN', 10, (event) => {
+    mod.hook('S_LOGIN', 10, (event) => {
         playerId = event.playerId;
     });
     
-    dispatch.hook('C_DUNGEON_CLEAR_COUNT_LIST', 1, (event) => {
+    mod.hook('C_DUNGEON_CLEAR_COUNT_LIST', 1, (event) => {
         targetName = event.name;
     });
         
-    dispatch.hook('S_DUNGEON_CLEAR_COUNT_LIST', 1, (event) => {
+    mod.hook('S_DUNGEON_CLEAR_COUNT_LIST', 1, (event) => {
         if (playerId === event.pid) return;
         
-        command.message(' ' + targetName + '\'s Dungeon Clears...');
+        mod.command.message(' ' + targetName + '\'s Dungeon Clears...');
         for (let i = 0; i < event.dungeons.length; i++) {
             if (DungeonNames[event.dungeons[i].id]) {
-                command.message(' ' + DungeonNames[event.dungeons[i].id] + '\t\t' + event.dungeons[i].clears);
+                mod.command.message(' ' + DungeonNames[event.dungeons[i].id] + '\t\t' + event.dungeons[i].clears);
             }
         }
     });
