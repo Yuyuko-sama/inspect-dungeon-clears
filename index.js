@@ -3,7 +3,8 @@
 module.exports = function InspectDungeonClears(mod) {
     
     const DungeonNames = {
-        9982: "扭曲的里安地下殿堂",
+        9044: "巴哈勒神殿",
+		9982: "扭曲的里安地下殿堂",
 		9782: "里安的地下殿堂",
 		9920: "空洞的安塔洛斯深淵",
 		9983: "漆黑的泰內布利斯城堡",
@@ -42,7 +43,7 @@ module.exports = function InspectDungeonClears(mod) {
     let playerId,
     targetName;
     
-    mod.hook('S_LOGIN', 10, (event) => {
+    mod.hook('S_LOGIN', mod.majorPatchVersion < 77 ? 11 : 12, (event) => {
         playerId = event.playerId;
     });
     
