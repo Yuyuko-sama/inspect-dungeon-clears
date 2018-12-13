@@ -43,7 +43,7 @@ module.exports = function InspectDungeonClears(mod) {
     let playerId,
     targetName;
     
-    mod.hook('S_LOGIN', mod.majorPatchVersion < 77 ? 11 : 12, (event) => {
+    mod.hook('S_LOGIN', 12, (event) => {
         playerId = event.playerId;
     });
     
